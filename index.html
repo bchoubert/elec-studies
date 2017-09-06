@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>RTE</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <img src="img/rte-logo.png" />
+        </div>
+        <!-- ------------------------------------------------------------------------------- -->
+        <h1 class="fancy">Réseau électrique<span class="bubble"><img src="img/energy/network.png"/></span></h1>
+        <div class="row">
+            <div class="col text-center">
+                <h5 class="min-chart"><span class="percent kms info-color-dark-text">> 1 400 000</span></h5>
+                <h5><span class="label info-color-dark-text">Longueur du réseau électrique</span></h5>
+            </div>
+            <div class="col info-color-dark text-center card">
+                <div class="w-100">
+                    <h5 class="min-chart white-text"><span class="percent kwh">5</span></h5>
+                </div>
+                <h5><span class="label white-text">Consommation annuelle d'une personne</span></h5>
+            </div>
+            <div class="text-center col">
+                <h5 class="min-chart dark info-color-dark-text" data-percent="6"><span class="percent"></span></h5>
+                <h5><span class="label info-color-dark-text">Pertes théoriques du réseau</span></h5>
+            </div>
+        </div>
+        <!-- ------------------------------------------------------------------------------- -->
+        <div class="row mt-5">
+            <div class="col-4 row">
+                <canvas class="chartjs col chart-legend" data-type="Doughnut" data-legend="electricity-production-repartition-legend" data-data="electricity-production-repartition"></canvas>
+            </div>
+            <div id="electricity-production-repartition-legend" class="chart-legend col-4"></div>
+        </div>
+        <!-- ------------------------------------------------------------------------------- -->
+        <div class="clearfix mt-4"></div>
+        <h1 class="fancy electricity">Production<span class="bubble"><img src="img/energy/electricity.png"/></span></h1>
+        <div class="row mt-5">
+            <div class="col-8 row">
+                <canvas class="chartjs col chart-legend" data-type="Line" data-legend="electricity-consumption-legend" data-data="electricity-consumption"></canvas>
+            </div>
+            <div id="electricity-consumption-legend" class="chart-legend col-4"></div>
+        </div>
+        <div class="clearfix mt-4"></div>
+        <h1 class="fancy nuclear">Energie Nucléaire<span class="bubble"><img src="img/energy/nuclear.png"/></span></h1>
+        <canvas id="myChart"></canvas>
+    </div>
+
+    <footer class="page-footer info-color-dark center-on-small-only">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="title">Footer Content</h5>
+                    <p>Here you can use rows and columns here to organize your footer content.</p>
+                </div>
+                <div class="col-md-6">
+                    <h5 class="title">Links</h5>
+                    <ul>
+                        <li><a href="#!">Link 1</a></li>
+                        <li><a href="#!">Link 2</a></li>
+                        <li><a href="#!">Link 3</a></li>
+                        <li><a href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container-fluid">
+                © 2015 Copyright: <a href="https://www.MDBootstrap.com"> MDBootstrap.com </a>
+
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/tether.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="js/charts.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('.min-chart.dark').easyPieChart({
+                barColor: "#0099CC",
+                onStep: function(from, to, percent) {
+                    $(this.el).find('.percent').text(Math.round(percent));
+                }
+            });
+            $('.min-chart.light').easyPieChart({
+                barColor: "#FFFFFF",
+                trackColor: '#00ace5',
+                onStep: function(from, to, percent) {
+                    $(this.el).find('.percent').text(Math.round(percent));
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+.info-color-dark-text {
+    color: #0099CC;
+}
+
+.kms::after {
+    content: "kms";
+}
+
+.kwh::after {
+    content: "kWh";
+}
+
+.percent {
+    white-space: nowrap;
+}
+
+.fancy {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+    color: #0099CC;
+}
+
+.fancy:before {
+    content: '';
+    height: 10px;
+    flex: 1;
+    border-top: 1px solid #0099CC;
+    border-bottom: 1px solid #0099CC;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.fancy > img {
+    height: 1.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.chart-legend li span.square {
+    display: inline-block;
+    padding-left: 0.5em;
+    width: 12px;
+    height: 12px;
+}
+
+.chart-legend li span:not(.square) {
+    color: #666666;
+    padding-left: 0.5em;
+}
+
+.bubble {
+    background-color: #0099CC;
+    height: 2em;
+    width: 2em;
+    border-radius: 1em;
+    display: inline-block;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.bubble > img {
+    margin-top: 17.5%;
+    margin-left: 17.5%;
+    height: 65%;
+    width: 65%;
+}
+
+.fancy.nuclear {
+    color: #FFC870;
+}
+
+.fancy.nuclear > .bubble {
+    background-color: #FFC870;
+}
+
+.fancy.nuclear:before {
+    border-top: 1px solid #FFC870;
+    border-bottom: 1px solid #FFC870;
+}
+
+.nuclear-text-color {
+    color: #FFC870;
+}
+
+.nuclear-color {
+    background-color: #FFC870;
+}
