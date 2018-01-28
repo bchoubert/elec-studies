@@ -93,3 +93,12 @@
 .page-footer {
     background-color: #00A6D9;
 }
+
+.leaflet-left .leaflet-control {
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar {
+    border: 0;
+}

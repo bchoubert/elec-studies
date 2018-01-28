@@ -3,9 +3,7 @@ var maps = {
         attributes: {
             css: {
                 height: "40em"
-            },
-            view: [47.5, 2.3],
-            zoom: 5
+            }
         },
         markers: dataNuclear,
         icon: L.AwesomeMarkers.icon({icon: 'o_nuclear', markerColor: 'beige', prefix: 'icon'})
@@ -14,9 +12,7 @@ var maps = {
         attributes: {
             css: {
                 height: "40em"
-            },
-            view: [47.5, 2.3],
-            zoom: 5
+            }
         },
         markers: dataHydro,
         icon: L.AwesomeMarkers.icon({icon: 'o_hydro', markerColor: 'darkred', prefix: 'icon'})
@@ -28,14 +24,8 @@ var maps = {
         var properties = maps[$(this).attr("id")];
         $(this).css(properties.attributes.css);
 
-        var map = L.map($(this).attr("id"), { zoomControl:false }).setView(properties.attributes.view, properties.attributes.zoom);
-        map.touchZoom.disable();
-        map.doubleClickZoom.disable();
-        map.scrollWheelZoom.disable();
-        map.boxZoom.disable();
-        map.keyboard.disable();
-
-        console.log(properties.markers.length)
+        var map = L.map($(this).attr("id")).setView([47.5, 2.3], 5);
+        maps[$(this).attr("id")].map = map;
 
         L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -45,5 +35,13 @@ var maps = {
             L.marker(this.coords, {icon: properties.icon}).addTo(map)
                 .bindPopup("<h4>"+this.title+"</h4>"+this.html);
         });
+
+        $("#"+$(this).attr("id")+" .leaflet-control-zoom.leaflet-bar.leaflet-control").append(
+            "<a class='leaflet-control-center' href='#' title='Center' role='button' aria-label='Center' data-mapid='"+$(this).attr("id")+"'><i class='fa fa-expand-wide'></i></a>")
+    });
+
+    $(".map").on("click", "a.leaflet-control-center", function(e) {
+        maps[$(this).data("mapid")].map.setView([47.5, 2.3], 5);
+        e.preventDefault();
     });
 })();
