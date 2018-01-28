@@ -1,0 +1,176 @@
+
+.fancy.nuclear {
+    color: #FFC870;
+}
+
+.fancy.nuclear > .bubble {
+    background-color: #FFC870;
+}
+
+.fancy.nuclear:before {
+    border-top: 1px solid #FFC870;
+    border-bottom: 1px solid #FFC870;
+}
+
+.nuclear-text-color {
+    color: #FFC870;
+}
+
+.nuclear-color,
+.avatar.nuclear-color {
+    background-color: #FFC870 !important;
+}
+
+.fancy.hydro {
+    color: #D50000;
+}
+
+.fancy.hydro > .bubble {
+    background-color: #D50000;
+}
+
+.fancy.hydro:before {
+    border-top: 1px solid #D50000;
+    border-bottom: 1px solid #D50000;
+}
+
+.hydro-text-color {
+    color: #D50000;
+}
+
+.hydro-color,
+.avatar.hydro-color {
+    background-color: #D50000 !important;
+}
+
+.fancy.gas {
+    color: #0091EA;
+}
+
+.fancy.gas > .bubble {
+    background-color: #0091EA;
+}
+
+.fancy.gas:before {
+    border-top: 1px solid #0091EA;
+    border-bottom: 1px solid #0091EA;
+}
+
+.gas-text-color {
+    color: #0091EA;
+}
+
+.gas-color,
+.avatar.gas-color {
+    background-color: #0091EA !important;
+}
+
+.fancy.wind {
+    color: #304FFE;
+}
+
+.fancy.wind > .bubble {
+    background-color: #304FFE;
+}
+
+.fancy.wind:before {
+    border-top: 1px solid #304FFE;
+    border-bottom: 1px solid #304FFE;
+}
+
+.wind-text-color {
+    color: #304FFE;
+}
+
+.wind-color,
+.avatar.wind-color {
+    background-color: #304FFE !important;
+}
+
+.fancy.coal {
+    color: #FF6D00;
+}
+
+.fancy.coal > .bubble {
+    background-color: #FF6D00;
+}
+
+.fancy.coal:before {
+    border-top: 1px solid #FF6D00;
+    border-bottom: 1px solid #FF6D00;
+}
+
+.coal-text-color {
+    color: #FF6D00;
+}
+
+.coal-color,
+.avatar.coal-color {
+    background-color: #FF6D00 !important;
+}
+
+.fancy.bio {
+    color: #00C853;
+}
+
+.fancy.bio > .bubble {
+    background-color: #00C853;
+}
+
+.fancy.bio:before {
+    border-top: 1px solid #00C853;
+    border-bottom: 1px solid #00C853;
+}
+
+.bio-text-color {
+    color: #00C853;
+}
+
+.bio-color,
+.avatar.bio-color {
+    background-color: #00C853 !important;
+}
+
+.fancy.solar {
+    color: #6200EA;
+}
+
+.fancy.solar > .bubble {
+    background-color: #6200EA;
+}
+
+.fancy.solar:before {
+    border-top: 1px solid #6200EA;
+    border-bottom: 1px solid #6200EA;
+}
+
+.solar-text-color {
+    color: #6200EA;
+}
+
+.solar-color,
+.avatar.solar-color {
+    background-color: #6200EA !important;
+}
+
+.fancy.fioul {
+    color: #FFD600;
+}
+
+.fancy.fioul > .bubble {
+    background-color: #FFD600;
+}
+
+.fancy.fioul:before {
+    border-top: 1px solid #FFD600;
+    border-bottom: 1px solid #FFD600;
+}
+
+.fioul-text-color {
+    color: #FFD600;
+}
+
+.fioul-color,
+.avatar.fioul-color {
+    background-color: #FFD600 !important;
+}

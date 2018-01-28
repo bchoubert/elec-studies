@@ -1,35 +1,17 @@
-.info-color-dark-text {
-    color: #0099CC;
-}
-
-.kms::after {
-    content: "kms";
-}
-
-.kwh::after {
-    content: "kWh";
-}
-
-.percent {
-    white-space: nowrap;
-}
-
 .fancy {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1em;
-    color: #0099CC;
+    color: #00A6D9;
 }
 
 .fancy:before {
     content: '';
     height: 10px;
     flex: 1;
-    border-top: 1px solid #0099CC;
-    border-bottom: 1px solid #0099CC;
-    margin-left: 0.5em;
+    border-top: 1px solid #00A6D9;
+    border-bottom: 1px solid #00A6D9;
     margin-right: 0.5em;
 }
 
@@ -52,39 +34,62 @@
 }
 
 .bubble {
-    background-color: #0099CC;
+    background-color: #00A6D9;
     height: 2em;
     width: 2em;
     border-radius: 1em;
     display: inline-block;
     margin-left: 0.5em;
-    margin-right: 0.5em;
 }
 
-.bubble > img {
-    margin-top: 17.5%;
-    margin-left: 17.5%;
-    height: 65%;
-    width: 65%;
+.bubble > i {
+    margin-top: 14px;
+    margin-left: 7px;
+    font-size: 120%;
+    color: #FFFFFF;
+    display: block;
 }
 
-.fancy.nuclear {
-    color: #FFC870;
+.min-chart {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-.fancy.nuclear > .bubble {
-    background-color: #FFC870;
+.map {
+    height: 15em;
+    display: block;
+    width: 100%;
+    border-radius: .3rem;
 }
 
-.fancy.nuclear:before {
-    border-top: 1px solid #FFC870;
-    border-bottom: 1px solid #FFC870;
+.awesome-marker:hover {
+    z-index: 9999 !important;
+    top: -2px !important;
+    padding-bottom: 2px !important;
 }
 
-.nuclear-text-color {
-    color: #FFC870;
+.card.testimonial-card .card-up img {
+    margin-top: -12%;
+    width: 100%;
+    display: block;
 }
 
-.nuclear-color {
-    background-color: #FFC870;
+.testimonial-card .card-up {
+    height: 240px;
+}
+
+.card.testimonial-card .avatar {
+    text-align: center;
+}
+
+.card.testimonial-card .avatar i {
+    margin-top: 9px;
+    margin-left: 5px;
+    font-size: 400%;
+    color: #FFFFFF;
+    display: block;
+}
+
+.page-footer {
+    background-color: #00A6D9;
 }
