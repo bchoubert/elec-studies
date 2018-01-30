@@ -37,13 +37,13 @@ $(function () {
         }
     });
     $('.min-chart#chart-solar').easyPieChart({
-        barColor: "#6200EA",
+        barColor: "#FFD600",
         onStep: function (from, to, percent) {
             $(this.el).find('.percent').text(Math.round(percent));
         }
     });
     $('.min-chart#chart-fioul').easyPieChart({
-        barColor: "#FFD600",
+        barColor: "#6200EA",
         onStep: function (from, to, percent) {
             $(this.el).find('.percent').text(Math.round(percent));
         }

@@ -23,18 +23,20 @@
 
     <div class="container">
         <div class="row">
-            <img src="img/rte-logo.png" />
+            <div class="col">
+                <img class="img-fluid" src="img/rte-logo.png" />
+            </div>
         </div>
         <!-- ------------------------------------------------------------------------------- -->
-        <h1 class="fancy">Réseau électrique<span class="bubble"><i class="icon-o_network"></i></span></h1>
+        <h1 class="fancy">Réseau<span class="bubble"><i class="icon-o_network"></i></span></h1>
        
         <div class="clearfix mt-4"></div>
         <h1 class="fancy electricity">Production<span class="bubble"><i class="icon-o_electricity"></i></span></h1>
 
         <div class="clearfix mt-4"></div>
-        <h1 class="fancy nuclear">Energie Nucléaire<span class="bubble"><i class="icon-o_nuclear"></i></span></h1>
+        <h1 class="fancy nuclear">Nucléaire<span class="bubble"><i class="icon-o_nuclear"></i></span></h1>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-lg-6">
                 <div class="card testimonial-card">
                     <div class="card-up">
                         <img src="img/nuclear.jpg"/>
@@ -43,30 +45,30 @@
                         <i class="icon-o_nuclear"></i>
                     </div>
                     <div class="card-body">
-                        <h4 class="card-title">58 réacteurs</h4>
+                        <h4 class="card-title">19 Centrales Nucléaires - 58 Réacteurs</h4>
                         <hr>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-lg-6">
                                 <div class="text-center">
                                     <span class="min-chart" id="chart-nuclear" data-percent="72"><span class="percent"></span></span>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-lg-6">
                                 <span class=" flex-center">de la production totale</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-lg-6">
                 <div id="map-nuclear" class="map z-depth-1"></div>
             </div>
         </div>
 
         <div class="clearfix mt-4"></div>
-        <h1 class="fancy hydro">Energie Hydraulique<span class="bubble"><i class="icon-o_hydro"></i></span></h1>
+        <h1 class="fancy hydro">Hydroélectrique<span class="bubble"><i class="icon-o_hydro"></i></span></h1>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-lg-6">
                 <div class="card testimonial-card">
                     <div class="card-up">
                         <img src="img/hydro.jpg"/>
@@ -75,30 +77,30 @@
                         <i class="icon-o_hydro"></i>
                     </div>
                     <div class="card-body">
-                        <h4 class="card-title">534 barrages</h4>
+                        <h4 class="card-title">534 Centrales Hydroélectriques</h4>
                         <hr>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-lg-6">
                                 <div class="text-center">
                                     <span class="min-chart" id="chart-hydro" data-percent="12"><span class="percent"></span></span>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-lg-6">
                                 <span class=" flex-center">de la production totale</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-lg-6">
                 <div id="map-hydro" class="map z-depth-1"></div>
             </div>
         </div>
 
         <div class="clearfix mt-4"></div>
-        <h1 class="fancy gas">Energie - Centrales à Gas<span class="bubble"><i class="icon-o_gas"></i></span></h1>
+        <h1 class="fancy gas">Gaz<span class="bubble"><i class="icon-o_gas"></i></span></h1>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-lg-6">
                 <div class="card testimonial-card">
                     <div class="card-up">
                         <img src="img/gas.jpg"/>
@@ -107,30 +109,30 @@
                         <i class="icon-o_gas"></i>
                     </div>
                     <div class="card-body">
-                        <h4 class="card-title">-- Centrales à Gas</h4>
+                        <h4 class="card-title">11 Centrales au Gaz</h4>
                         <hr>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-lg-6">
                                 <div class="text-center">
                                     <span class="min-chart" id="chart-gas" data-percent="6"><span class="percent"></span></span>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-lg-6">
                                 <span class=" flex-center">de la production totale</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                
+            <div class="col-lg-6">
+                <div id="map-gas" class="map z-depth-1"></div>
             </div>
         </div>
 
         <div class="clearfix mt-4"></div>
-        <h1 class="fancy wind">Energie Eolienne<span class="bubble"><i class="icon-o_eolien"></i></span></h1>
+        <h1 class="fancy wind">Eolien<span class="bubble"><i class="icon-o_eolien"></i></span></h1>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-lg-6">
                 <div class="card testimonial-card">
                     <div class="card-up">
                         <img src="img/wind.jpg"/>
@@ -139,62 +141,30 @@
                         <i class="icon-o_eolien"></i>
                     </div>
                     <div class="card-body">
-                        <h4 class="card-title">-- Eoliennes</h4>
+                        <h4 class="card-title">-- Parcs Eoliens</h4>
                         <hr>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-lg-6">
                                 <div class="text-center">
                                     <span class="min-chart" id="chart-wind" data-percent="4"><span class="percent"></span></span>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-lg-6">
                                 <span class=" flex-center">de la production totale</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                
+            <div class="col-lg-6">
+                <div id="map-wind" class="map z-depth-1"></div>
             </div>
         </div>
 
         <div class="clearfix mt-4"></div>
-        <h1 class="fancy coal">Energie - Centrales à Charbon<span class="bubble"><i class="icon-o_charbon"></i></span></h1>
+        <h1 class="fancy bio">Bio-Energie<span class="bubble"><i class="icon-o_bio"></i></span></h1>
         <div class="row">
-            <div class="col-md-6">
-                <div class="card testimonial-card">
-                    <div class="card-up">
-                        <img src="img/coal.jpg"/>
-                    </div>
-                    <div class="avatar coal-color">
-                        <i class="icon-o_charbon"></i>
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title">-- Centrales à Charbon</h4>
-                        <hr>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="text-center">
-                                    <span class="min-chart" id="chart-coal" data-percent="1"><span class="percent"></span></span>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <span class=" flex-center">de la production totale</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                
-            </div>
-        </div>
-
-        <div class="clearfix mt-4"></div>
-        <h1 class="fancy bio">Bio-Energies<span class="bubble"><i class="icon-o_bio"></i></span></h1>
-        <div class="row">
-            <div class="col-md-6">
+            <div class="col-lg-6">
                 <div class="card testimonial-card">
                     <div class="card-up">
                         <img src="img/bio.jpg"/>
@@ -203,30 +173,30 @@
                         <i class="icon-o_bio"></i>
                     </div>
                     <div class="card-body">
-                        <h4 class="card-title">-- Centrales à Bio-Energies</h4>
+                        <h4 class="card-title">-- Centrales aux Bio-Energies</h4>
                         <hr>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-lg-6">
                                 <div class="text-center">
                                     <span class="min-chart" id="chart-bio" data-percent="2"><span class="percent"></span></span>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-lg-6">
                                 <span class=" flex-center">de la production totale</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                
+            <div class="col-lg-6">
+                <div id="map-bio" class="map z-depth-1"></div>
             </div>
         </div>
 
         <div class="clearfix mt-4"></div>
-        <h1 class="fancy solar">Energie Solaire<span class="bubble"><i class="icon-o_solar"></i></span></h1>
+        <h1 class="fancy solar">Solaire<span class="bubble"><i class="icon-o_solar"></i></span></h1>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-lg-6">
                 <div class="card testimonial-card">
                     <div class="card-up">
                         <img src="img/solar.jpg"/>
@@ -235,30 +205,62 @@
                         <i class="icon-o_solar"></i>
                     </div>
                     <div class="card-body">
-                        <h4 class="card-title">-- Panneaux solaires</h4>
+                        <h4 class="card-title">-- Centrales Solaires</h4>
                         <hr>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-lg-6">
                                 <div class="text-center">
                                     <span class="min-chart" id="chart-solar" data-percent="2"><span class="percent"></span></span>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-lg-6">
                                 <span class=" flex-center">de la production totale</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                
+            <div class="col-lg-6">
+                <div id="map-solar" class="map z-depth-1"></div>
             </div>
         </div>
 
         <div class="clearfix mt-4"></div>
-        <h1 class="fancy fioul">Energie - Centrales au Fioul<span class="bubble"><i class="icon-o_fioul"></i></span></h1>
+        <h1 class="fancy coal">Charbon<span class="bubble"><i class="icon-o_charbon"></i></span></h1>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-lg-6">
+                <div class="card testimonial-card">
+                    <div class="card-up">
+                        <img src="img/coal.jpg"/>
+                    </div>
+                    <div class="avatar coal-color">
+                        <i class="icon-o_charbon"></i>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">4 Centrales au Charbon</h4>
+                        <hr>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="text-center">
+                                    <span class="min-chart" id="chart-coal" data-percent="1"><span class="percent"></span></span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <span class=" flex-center">de la production totale</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div id="map-coal" class="map z-depth-1"></div>
+            </div>
+        </div>
+
+        <div class="clearfix mt-4"></div>
+        <h1 class="fancy fioul">Fioul<span class="bubble"><i class="icon-o_fioul"></i></span></h1>
+        <div class="row">
+            <div class="col-lg-6">
                 <div class="card testimonial-card">
                     <div class="card-up">
                         <img src="img/fioul.jpg"/>
@@ -267,35 +269,35 @@
                         <i class="icon-o_fioul"></i>
                     </div>
                     <div class="card-body">
-                        <h4 class="card-title">-- Centrales au Fioul</h4>
+                        <h4 class="card-title">1 Centrale au Fioul</h4>
                         <hr>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-lg-6">
                                 <div class="text-center">
                                     <span class="min-chart" id="chart-fioul" data-percent="1"><span class="percent"></span></span>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-lg-6">
                                 <span class=" flex-center">de la production totale</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-6">
-                
+            <div class="col-lg-6">
+                <div id="map-fioul" class="map z-depth-1"></div>
+            </div>
         </div>
     </div>
 
     <footer class="page-footer center-on-small-only">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <h5 class="title">Footer Content</h5>
                     <p>Here you can use rows and columns here to organize your footer content.</p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <h5 class="title">Links</h5>
                     <ul>
                         <li><a href="#!">Link 1</a></li>
@@ -322,6 +324,8 @@
 
     <script type="text/javascript" src="js/data-nuclear.js"></script>
     <script type="text/javascript" src="js/data-hydro.js"></script>
+    <script type="text/javascript" src="js/data-coal.js"></script>
+    <script type="text/javascript" src="js/data-gaz.js"></script>
 
     <script type="text/javascript" src="js/charts.js"></script>
     <script type="text/javascript" src="js/maps.js"></script>

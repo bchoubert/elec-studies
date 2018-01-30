@@ -8,16 +8,10 @@
 
 .fancy:before {
     content: '';
-    height: 10px;
+    height: 8px;
     flex: 1;
     border-top: 1px solid #00A6D9;
-    border-bottom: 1px solid #00A6D9;
-    margin-right: 0.5em;
-}
-
-.fancy > img {
-    height: 1.5em;
-    margin-left: 0.5em;
+    border-bottom: 5px solid #00A6D9;
     margin-right: 0.5em;
 }
 
