@@ -4,15 +4,17 @@
     justify-content: center;
     align-items: center;
     color: #00A6D9;
+    text-align: center;
 }
 
-.fancy:before {
+.fancy:after {
     content: '';
     height: 8px;
     flex: 1;
-    border-top: 1px solid #00A6D9;
-    border-bottom: 5px solid #00A6D9;
-    margin-right: 0.5em;
+    border-top: 4px solid #00A6D9;
+    border-bottom: 4px solid #00A6D9;
+    border-radius: 4px;
+    margin-left: 0.5em;
 }
 
 .chart-legend li span.square {
@@ -33,12 +35,11 @@
     width: 2em;
     border-radius: 1em;
     display: inline-block;
-    margin-left: 0.5em;
+    margin-right: 0.5em;
 }
 
 .bubble > i {
     margin-top: 14px;
-    margin-left: 7px;
     font-size: 120%;
     color: #FFFFFF;
     display: block;
@@ -95,4 +96,8 @@
 
 .leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar {
     border: 0;
+}
+
+.map {
+    height: calc(411px + 6rem);
 }

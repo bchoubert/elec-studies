@@ -7,9 +7,10 @@
     background-color: #FFC870;
 }
 
-.fancy.nuclear:before {
-    border-top: 1px solid #FFC870;
-    border-bottom: 5px solid #FFC870;
+.fancy.nuclear:before,
+.fancy.nuclear:after {
+    border-top: 4px solid #FFC870;
+    border-bottom: 4px solid #FFC870;
 }
 
 .nuclear-text-color {
@@ -29,9 +30,10 @@
     background-color: #D50000;
 }
 
-.fancy.hydro:before {
-    border-top: 1px solid #D50000;
-    border-bottom: 5px solid #D50000;
+.fancy.hydro:before,
+.fancy.hydro:after {
+    border-top: 4px solid #D50000;
+    border-bottom: 4px solid #D50000;
 }
 
 .hydro-text-color {
@@ -51,9 +53,10 @@
     background-color: #0091EA;
 }
 
-.fancy.gas:before {
-    border-top: 1px solid #0091EA;
-    border-bottom: 5px solid #0091EA;
+.fancy.gas:before,
+.fancy.gas:after {
+    border-top: 4px solid #0091EA;
+    border-bottom: 4px solid #0091EA;
 }
 
 .gas-text-color {
@@ -73,9 +76,10 @@
     background-color: #304FFE;
 }
 
-.fancy.wind:before {
-    border-top: 1px solid #304FFE;
-    border-bottom: 5px solid #304FFE;
+.fancy.wind:before,
+.fancy.wind:after {
+    border-top: 4px solid #304FFE;
+    border-bottom: 4px solid #304FFE;
 }
 
 .wind-text-color {
@@ -95,9 +99,10 @@
     background-color: #FF6D00;
 }
 
-.fancy.coal:before {
-    border-top: 1px solid #FF6D00;
-    border-bottom: 5px solid #FF6D00;
+.fancy.coal:before,
+.fancy.coal:after {
+    border-top: 4px solid #FF6D00;
+    border-bottom: 4px solid #FF6D00;
 }
 
 .coal-text-color {
@@ -117,9 +122,10 @@
     background-color: #00C853;
 }
 
-.fancy.bio:before {
-    border-top: 1px solid #00C853;
-    border-bottom: 5px solid #00C853;
+.fancy.bio:before,
+.fancy.bio:after {
+    border-top: 4px solid #00C853;
+    border-bottom: 4px solid #00C853;
 }
 
 .bio-text-color {
@@ -139,9 +145,10 @@
     background-color: #FFD600;
 }
 
-.fancy.solar:before {
-    border-top: 1px solid #FFD600;
-    border-bottom: 5px solid #FFD600;
+.fancy.solar:before,
+.fancy.solar:after {
+    border-top: 4px solid #FFD600;
+    border-bottom: 4px solid #FFD600;
 }
 
 .solar-text-color {
@@ -161,9 +168,10 @@
     background-color: #6200EA;
 }
 
-.fancy.fioul:before {
-    border-top: 1px solid #6200EA;
-    border-bottom: 5px solid #6200EA;
+.fancy.fioul:before,
+.fancy.fioul:after {
+    border-top: 4px solid #6200EA;
+    border-bottom: 4px solid #6200EA;
 }
 
 .fioul-text-color {
@@ -173,4 +181,8 @@
 .fioul-color,
 .avatar.fioul-color {
     background-color: #6200EA !important;
+}
+
+.white-text-color {
+    color: #FFFFFF;
 }

@@ -2,7 +2,7 @@ var maps = {
     "map-nuclear": {
         attributes: {
             css: {
-                height: "40em"
+                
             }
         },
         markers: dataNuclear,
@@ -11,7 +11,7 @@ var maps = {
     "map-hydro": {
         attributes: {
             css: {
-                height: "40em"
+                
             }
         },
         markers: dataHydro,
@@ -20,7 +20,7 @@ var maps = {
     "map-gas": {
         attributes: {
             css: {
-                height: "40em"
+                
             }
         },
         markers: dataGaz,
@@ -29,7 +29,7 @@ var maps = {
     "map-wind": {
         attributes: {
             css: {
-                height: "40em"
+                
             }
         },
         markers: [],
@@ -38,7 +38,7 @@ var maps = {
     "map-coal": {
         attributes: {
             css: {
-                height: "40em"
+                
             }
         },
         markers: dataCoal,
@@ -47,7 +47,7 @@ var maps = {
     "map-bio": {
         attributes: {
             css: {
-                height: "40em"
+                
             }
         },
         markers: [],
@@ -56,24 +56,12 @@ var maps = {
     "map-solar": {
         attributes: {
             css: {
-                height: "40em"
+                
             }
         },
         markers: [],
         icon: L.AwesomeMarkers.icon({icon: 'o_solar', markerColor: 'black', prefix: 'icon'})
     },
-    "map-fioul": {
-        attributes: {
-            css: {
-                height: "40em"
-            }
-        },
-        markers: [{
-            title: "Cordemais", coords: [47.236, -1.439],
-            html: "<ul><li>Puissance : 700 MWe</li><li>1 Chambre</li><li>Mise en service: 1977 - Arrêtée</li></ul>"
-        }],
-        icon: L.AwesomeMarkers.icon({icon: 'o_fioul', markerColor: 'purple', prefix: 'icon'})
-    }
 };
 
 (function() {
