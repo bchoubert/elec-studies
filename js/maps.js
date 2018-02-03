@@ -32,8 +32,8 @@ var maps = {
                 
             }
         },
-        markers: [],
-        icon: L.AwesomeMarkers.icon({icon: 'o_wind', markerColor: 'darkblue', prefix: 'icon'})
+        markers: dataWind,
+        icon: L.AwesomeMarkers.icon({icon: 'o_eolien', markerColor: 'darkblue', prefix: 'icon'})
     },
     "map-coal": {
         attributes: {
@@ -59,7 +59,7 @@ var maps = {
                 
             }
         },
-        markers: [],
+        markers: dataSolar,
         icon: L.AwesomeMarkers.icon({icon: 'o_solar', markerColor: 'black', prefix: 'icon'})
     },
 };
@@ -81,8 +81,14 @@ var maps = {
         }).addTo(map);
 
         $(properties.markers).each(function(){
-            L.marker(this.coords, {icon: properties.icon}).addTo(map)
-                .bindPopup("<h4>"+this.title+"</h4>"+this.html);
+
+            if(this.img) {
+                L.marker(this.coords, {icon: properties.icon}).addTo(map)
+                    .bindPopup("<img class='w-100' src='"+this.img+"'/><div class='popup-content'><h4>"+this.title+"</h4>"+this.html+"</div>");
+            } else {
+                L.marker(this.coords, {icon: properties.icon}).addTo(map)
+                    .bindPopup("<div class='popup-content'><h4>"+this.title+"</h4>"+this.html+"</div>");
+            }
         });
 
         $("#"+$(this).attr("id")+" .leaflet-control-zoom.leaflet-bar.leaflet-control").append(

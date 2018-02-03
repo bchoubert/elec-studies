@@ -101,3 +101,28 @@
 .map {
     height: calc(411px + 6rem);
 }
+
+.leaflet-popup-content {
+    margin: 0;
+}
+
+.leaflet-popup-content-wrapper {
+    overflow: hidden;
+}
+
+.popup-content {
+    margin: 13px 19px;
+}
+
+.leaflet-container a.leaflet-popup-close-button:hover,
+.leaflet-container a.leaflet-popup-close-button {
+    height: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #FFFFFF;
+    border-radius: 10px;
+    width: 20px;
+    padding-right: 0;
+    padding-top: 2.5px;
+    margin: 5px;
+}
