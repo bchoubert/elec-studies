@@ -126,3 +126,18 @@
     padding-top: 2.5px;
     margin: 5px;
 }
+
+@media screen and (max-width: 1200px) {
+    .fa-5x {
+        font-size: 200%;
+    }
+    h1.fancy {
+        font-size: 1.5rem;
+    }
+    .bubble > i {
+        margin-top: 8px;
+    }
+    .detailsContainer .clearfix {
+        display: none;
+    }
+}

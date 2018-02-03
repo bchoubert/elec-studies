@@ -69,12 +69,10 @@ var maps = {
         var properties = maps[$(this).attr("id")];
         $(this).css(properties.attributes.css);
 
-        var map = L.map($(this).attr("id")).setView([47.5, 2.3], 5);
+        var map = L.map($(this).attr("id"), {dragging: !L.Browser.mobile}).setView([47.5, 2.3], 5);
         maps[$(this).attr("id")].map = map;
 
         map.scrollWheelZoom.disable();
-
-        console.log($(this).attr("id")+" "+properties.markers.length)
 
         L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
