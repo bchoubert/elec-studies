@@ -78,16 +78,19 @@ var maps = {
             attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
 
-        $(properties.markers).each(function(){
+        if(properties.hasOwnProperty("markers")) {
+            $(properties.markers).each(function(){
 
-            if(this.img) {
-                L.marker(this.coords, {icon: properties.icon}).addTo(map)
-                    .bindPopup("<img class='w-100' src='"+this.img+"'/><div class='popup-content'><h4>"+this.title+"</h4>"+this.html+"</div>");
-            } else {
-                L.marker(this.coords, {icon: properties.icon}).addTo(map)
-                    .bindPopup("<div class='popup-content'><h4>"+this.title+"</h4>"+this.html+"</div>");
-            }
-        });
+                if(this.img) {
+                    L.marker(this.coords, {icon: properties.icon}).addTo(map)
+                        .bindPopup("<img class='w-100' src='"+this.img+"'/><div class='popup-content'><h4>"+this.title+"</h4>"+this.html+"</div>");
+                } else {
+                    L.marker(this.coords, {icon: properties.icon}).addTo(map)
+                        .bindPopup("<div class='popup-content'><h4>"+this.title+"</h4>"+this.html+"</div>");
+                }
+            });
+        }
+        
 
         $("#"+$(this).attr("id")+" .leaflet-control-zoom.leaflet-bar.leaflet-control").append(
             "<a class='leaflet-control-center' href='#' title='Center' role='button' aria-label='Center' data-mapid='"+$(this).attr("id")+"'><i class='fa fa-expand-wide'></i></a>")

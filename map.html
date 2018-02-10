@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>RTE</title>
+
+    <link rel="stylesheet" href="lib/font-awesome/css/fontawesome.min.css"/>
+    <link rel="stylesheet" href="lib/font-awesome/css/fontawesome-all.min.css"/>
+    <link rel="stylesheet" href="lib/fontello/css/fontello.css"/>
+    <link rel="stylesheet" href="lib/mdbootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="lib/mdbootstrap/css/mdb.min.css"/>
+    <link rel="stylesheet" href="lib/leaflet/leaflet.css"/>
+    <link rel="stylesheet" href="lib/leaflet/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="css/colors.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <style>
+        body, html, #map {
+            height: 100%;
+            width: 100%;
+            display: block;
+        }
+    </style>
+    
+</head>
+
+<body>
+
+    <div id="map"></div>
+    <script type="text/javascript" src="lib/mdbootstrap/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="lib/mdbootstrap/js/popper.min.js"></script>
+    <script type="text/javascript" src="lib/mdbootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="lib/mdbootstrap/js/mdb.min.js"></script>
+    <script type="text/javascript" src="lib/leaflet/leaflet.js"></script>
+    <script type="text/javascript" src="lib/leaflet/leaflet.awesome-markers.min.js"></script>
+
+    <script type="text/javascript" src="data/paths.js"></script>
+
+    <script type="text/javascript">
+        function getColorFromKv(kv) {
+            if(isNaN(kv) || kv == null) {
+                return "red";
+            }
+            if(kv > 230 ) {
+                return "#1976d2";
+            }
+            return "#64b5f6";
+        }
+        (function() {
+
+            var map = L.map("map").setView([47.5, 2.3], 5);
+
+            L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            $(paths0).each(function() {
+
+                var popup = "<div class='popup-content'><h4>"+this.code+"</h4>";
+
+                if(this.label != null) {
+                    popup += "Label : "+this.label;
+                }
+                if(this.kv != null) {
+                    popup += "<br/>Puissance : "+this.kv+"kV";
+                } else {
+                    popup += "<br/>Puissance inconnue";
+                }
+                popup += "</div>";
+
+                L.polyline(this.points, {color: getColorFromKv(this.kv)}).addTo(map)
+                    .bindPopup(popup);
+            });
+        })();
+    </script>
+</body>
+
+</html>

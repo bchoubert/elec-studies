@@ -127,7 +127,7 @@
     margin: 5px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 991px) {
     .fa-5x {
         font-size: 200%;
     }
@@ -139,5 +139,8 @@
     }
     .detailsContainer .clearfix {
         display: none;
+    }
+    .map {
+        margin-top: 1.5rem;
     }
 }
