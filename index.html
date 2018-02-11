@@ -28,14 +28,77 @@
             </div>
         </div>
         <!-- ------------------------------------------------------------------------------- -->
-        <h1 class="fancy"><span class="bubble"><i class="icon-o_network"></i></span>Réseau</h1>
-       
-        <div class="clearfix mt-4"></div>
+        
         <h1 class="fancy electricity"><span class="bubble"><i class="icon-o_electricity"></i></span>Production</h1>
 
         <div class="clearfix mt-4"></div>
         <h1 class="fancy"><span class="bubble"><i class="icon-plug-alt"></i></span>Consommation</h1>
 
+        <div class="clearfix mt-4"></div>
+
+        <h1 class="fancy"><span class="bubble"><i class="icon-o_network"></i></span>Réseau</h1>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card testimonial-card">
+                    <div class="card-up">
+                        <img src="img/network.jpg"/>
+                    </div>
+                    <div class="avatar rte-bgcolor">
+                        <i class="icon-o_network"></i>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">34 239 lignes électriques de transport</h4>
+                        <hr>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="text-center">
+                                    <span class="min-chart" id="chart-network" data-percent="7" data-color="#00A6D9"><span class="percent"></span></span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <span class=" flex-center">de pertes sur le transport</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="z-depth-1 mapMenuContainer">
+                    <div id="map-network" class="map-path">
+                        <div class="flex-center text-center">
+                            <i class="fa fa-spinner fa-spin fa-2x d-block"></i>
+                            <span class="d-block">Chargement en cours</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <input id="radio1" name="groupElec" type="radio" data-type="high" checked />
+                                <label for="radio1">
+                                    Haute tension
+                                    <i class="icon-o_electricity"></i>
+                                    <i class="icon-o_electricity"></i>
+                                </label>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input id="radio2" name="groupElec" type="radio" data-type="mid" />
+                                <label for="radio2">
+                                    Moyenne tension
+                                    <i class="icon-o_electricity"></i><br/>
+                                    <h6 class="blockquote-footer">
+                                        <i class="fas fa-exclamation-triangle orange-text"></i>
+                                        Chargement déconseillé sur mobile
+                                    </h6>
+                                    
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
         <div class="clearfix mt-4"></div>
         <h1 class="fancy nuclear"><span class="bubble"><i class="icon-o_nuclear"></i></span>Nucléaire</h1>
         
@@ -513,6 +576,9 @@
 
     <script type="text/javascript" src="js/charts.js"></script>
     <script type="text/javascript" src="js/maps.js"></script>
+
+    <script type="text/javascript" src="data/paths.js"></script>
+    <script type="text/javascript" src="js/map-network.js"></script>
 </body>
 
 </html>

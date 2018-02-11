@@ -1,4 +1,8 @@
 
+.testimonial-card .avatar.rte-bgcolor {
+    background-color: #00A6D9 !important;
+}
+
 .fancy.nuclear {
     color: #FFC870;
 }

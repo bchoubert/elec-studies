@@ -102,6 +102,10 @@
     height: calc(411px + 6rem);
 }
 
+.map-path {
+    height: calc(411px + 6rem - 102px);
+}
+
 .leaflet-popup-content {
     margin: 0;
 }
@@ -125,6 +129,30 @@
     padding-right: 0;
     padding-top: 2.5px;
     margin: 5px;
+}
+
+.mapMenuContainer .form-group  {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.mapMenuContainer i.icon-o_electricity + i.icon-o_electricity:before {
+    margin-left: -10px;
+}
+
+path.leaflet-interactive:hover {
+    stroke-width: 8px;
+    cursor: none;
+}
+
+[data-type="high"]:checked+label:after {
+    border-color: #1976d2;
+    background-color: #1976d2;
+}
+
+[data-type="mid"]:checked+label:after {
+    border-color: #64b5f6;
+    background-color: #64b5f6;
 }
 
 @media screen and (max-width: 991px) {
