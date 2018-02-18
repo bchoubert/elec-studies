@@ -22,32 +22,104 @@
 <body>
 
     <div class="container">
-        <div class="row">
-            <div class="col">
-                <img class="img-fluid" src="img/rte-logo.png" />
+        <div id="introduction" class="row">
+            <div class="col mb-4">
+                <img class="img-fluid z-depth-1 hoverable w-100 rounded" src="img/background.jpg" />
+                <div class="col-12 bubbleBorderContainer d-flex justify-content-around h-100 align-items-center">
+                    <span class="bubbleBorder">
+                        <i class="icon-o_nuclear"></i>
+                    </span>
+                    <span class="bubbleBorder">
+                        <i class="icon-o_hydro"></i>
+                    </span>
+                    <span class="bubbleBorder">
+                        <i class="icon-o_gas"></i>
+                    </span>
+                    <span class="bubbleBorder">
+                        <i class="icon-o_eolien"></i>
+                    </span>
+                    <span class="bubbleBorder">
+                        <i class="icon-o_bio"></i>
+                    </span>
+                    <span class="bubbleBorder">
+                        <i class="icon-o_solar"></i>
+                    </span>
+                    <span class="bubbleBorder">
+                        <i class="icon-o_charbon"></i>
+                    </span>
+                </div>
             </div>
+           
         </div>
         <!-- ------------------------------------------------------------------------------- -->
         
         <h1 class="fancy electricity"><span class="bubble"><i class="icon-o_electricity"></i></span>Production</h1>
 
-        <div class="clearfix mt-4"></div>
-        <h1 class="fancy"><span class="bubble"><i class="icon-plug-alt"></i></span>Consommation</h1>
-
-        <div class="clearfix mt-4"></div>
-
-        <h1 class="fancy"><span class="bubble"><i class="icon-o_network"></i></span>Réseau</h1>
         <div class="row">
             <div class="col-lg-6">
                 <div class="card testimonial-card">
                     <div class="card-up">
-                        <img src="img/network.jpg"/>
+                        <img src="img/production.jpg"/>
+                    </div>
+                    <div class="avatar rte-bgcolor">
+                        <i class="icon-o_electricity"></i>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Production totale : 527 TWh</h4>
+                        <hr>
+                        <div class="row">
+                            <canvas id="chart-production" class="chart" width="540" height="110"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                
+            </div>
+        </div>
+
+        <div class="clearfix mt-4"></div>
+        <h1 class="fancy"><span class="bubble"><i class="icon-plug-alt"></i></span>Consommation</h1>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card testimonial-card">
+                    <div class="card-up">
+                        <img src="img/consommation.jpg"/>
+                    </div>
+                    <div class="avatar rte-bgcolor">
+                        <i class="icon-plug-alt"></i>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Consommation totale : 483 TWh</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card testimonial-card">
+                    <div class="card-body">
+                        <h4 class="card-title">Consommation</h4>
+                        <hr>
+                        <canvas id="chart-consommation" class="chart" width="540" height="301"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="clearfix mt-4"></div>
+        <h1 class="fancy"><span class="bubble"><i class="icon-o_network"></i></span>Réseau</h1>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card testimonial-card">
+                    <div class="card-up">
+                        <img src="img/network2.jpg"/>
                     </div>
                     <div class="avatar rte-bgcolor">
                         <i class="icon-o_network"></i>
                     </div>
                     <div class="card-body">
-                        <h4 class="card-title">34 239 lignes électriques de transport</h4>
+                        <h4 class="card-title">33 907 lignes électriques de transport</h4>
                         <hr>
                         <div class="row">
                             <div class="col-lg-6">
@@ -96,6 +168,39 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div class="clearfix mt-4"></div>
+        <h1 class="fancy"><span class="bubble"><i class="mt-4 far fa-exchange-alt"></i></span>Imports / Exports</h1>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card testimonial-card">
+                    <div class="card-up">
+                        <img src="img/consommation.jpg"/>
+                    </div>
+                    <div class="avatar rte-bgcolor">
+                        <i class="mt-4 far fa-exchange-alt"></i>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title"></h4>
+                        <hr>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="text-center">
+
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <span class=" flex-center"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                
             </div>
         </div>
        
@@ -536,7 +641,7 @@
     </div>
 
     <footer class="page-footer center-on-small-only">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-6">
                     <h5 class="title">Footer Content</h5>

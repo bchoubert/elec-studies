@@ -5,6 +5,9 @@
     align-items: center;
     color: #00A6D9;
     text-align: center;
+    margin-bottom: -0.4em;
+    position: relative;
+    z-index: 9;
 }
 
 .fancy:after {
@@ -15,6 +18,30 @@
     border-bottom: 4px solid #00A6D9;
     border-radius: 4px;
     margin-left: 0.5em;
+}
+
+#introduction img.img-fluid {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+
+.bubbleBorderContainer {
+    margin-top: -30%;
+    padding-bottom: 25%;
+    color: #FFFFFF;
+    font-size: 200%;
+}
+
+.bubbleBorder {
+    border: 3px solid #FFFFFF;
+    padding: 0.5em;
+    border-radius: 50%;
+    height: auto;
+    transition: background-color 0.5s;
+}
+
+.bubbleBorder:hover {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .chart-legend li span.square {
@@ -31,16 +58,17 @@
 
 .bubble {
     background-color: #00A6D9;
-    height: 2em;
-    width: 2em;
-    border-radius: 1em;
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
     display: inline-block;
     margin-right: 0.5em;
+    border: 5px solid #FFFFFF;
 }
 
 .bubble > i {
-    margin-top: 14px;
-    font-size: 120%;
+    margin-top: 16px;
+    font-size: 165%;
     color: #FFFFFF;
     display: block;
 }
@@ -79,7 +107,7 @@
 
 .card.testimonial-card .avatar i {
     margin-top: 9px;
-    margin-left: 5px;
+    margin-left: 2px;
     font-size: 400%;
     color: #FFFFFF;
     display: block;
@@ -155,6 +183,12 @@ path.leaflet-interactive:hover {
     background-color: #64b5f6;
 }
 
+.chart {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
 @media screen and (max-width: 991px) {
     .fa-5x {
         font-size: 200%;
@@ -170,5 +204,9 @@ path.leaflet-interactive:hover {
     }
     .map {
         margin-top: 1.5rem;
+    }
+    .bubbleBorder {
+        border: 0;
+        padding: 0;
     }
 }

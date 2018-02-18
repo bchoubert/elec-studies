@@ -57,7 +57,6 @@ var networkLayers = {
         }
 
         networkLayers.high.addTo(networkMap);
-       
     });
 
     $("#map-network .leaflet-control-zoom.leaflet-bar.leaflet-control").append(
