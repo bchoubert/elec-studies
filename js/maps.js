@@ -50,7 +50,7 @@ var maps = {
                 
             }
         },
-        markers: [],
+        markers: dataBio,
         icon: L.AwesomeMarkers.icon({icon: 'o_bio', markerColor: 'green', prefix: 'icon'})
     },
     "map-solar": {

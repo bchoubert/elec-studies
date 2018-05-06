@@ -91,7 +91,9 @@
                         <i class="icon-plug-alt"></i>
                     </div>
                     <div class="card-body">
-                        <h4 class="card-title">Consommation totale : 483 TWh</h4>
+                        <h4 class="card-title">Consommation totale : 447 TWh</h4>
+                        <hr>
+                        <canvas id="chart-consommation-by-year" class="chart" width="540" height="110"></canvas>
                     </div>
                 </div>
             </div>
@@ -100,14 +102,29 @@
                     <div class="card-body">
                         <h4 class="card-title">Consommation</h4>
                         <hr>
-                        <canvas id="chart-consommation" class="chart" width="540" height="301"></canvas>
+                        <canvas id="chart-consommation-by-theme" class="chart" width="540" height="301"></canvas>
+                        <ul class="chart-legend">
+                            <li><span class="square" style="background-color: #3f51b5"></span> Agriculture et industrie agroalimentaire</li>
+                            <li><span class="square" style="background-color: #36A2EB"></span> Energies et combustibles minéraux solides</li>
+                            <li><span class="square" style="background-color: #0097a7"></span> Chimie et parachimie</li>
+                            <li><span class="square" style="background-color: #00C851"></span> Construction automobile</li>
+                            <li><span class="square" style="background-color: #007E33"></span> Métallurgie et mécanique</li>
+                            <li><span class="square" style="background-color: #FFCD56"></span> Minéraux et matériaux</li>
+                            <li><span class="square" style="background-color: #fb8c00"></span> Papier, carton</li>
+                            <li><span class="square" style="background-color: #f4511e"></span> Sidérurgie</li>
+                            <li><span class="square" style="background-color: #ff4444"></span> Autres industries</li>
+                            <li><span class="square" style="background-color: #CC0000"></span> Transports et télécommunications</li>
+                            <li><span class="square" style="background-color: #ba68c8"></span> Tertiaire</li>
+                            <li><span class="square" style="background-color: #9933CC"></span> Particuliers</li>
+                            <li><span class="square" style="background-color: #59698d"></span> Autres professionnels</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="clearfix mt-4"></div>
-        <h1 class="fancy"><span class="bubble"><i class="icon-o_network"></i></span>Réseau</h1>
+        <h1 class="fancy"><span class="bubble"><i class="icon-o_network"></i></span>Transport</h1>
 
         <div class="row">
             <div class="col-lg-6">
@@ -178,7 +195,7 @@
             <div class="col-lg-6">
                 <div class="card testimonial-card">
                     <div class="card-up">
-                        <img src="img/consommation.jpg"/>
+                        <img src="img/imports.jpg"/>
                     </div>
                     <div class="avatar rte-bgcolor">
                         <i class="mt-4 far fa-exchange-alt"></i>
@@ -257,10 +274,12 @@
                         <div class="col-lg-4">
                             <i class="icon-nuclear nuclear-text-color fa-5x"></i>
                             <div class="clearfix"></div>
-                            a
+                            Durée de vie de 40 ans
                         </div>
-                        <div class="col-12 m-2">
-                            La production nucléaire française
+                        <div class="col-12 my-2">
+                            L'énergie nucléaire dépend d'un combustible fissile, l'uranium, dont le minerai est contenu dans le sous-sol de la Terre.
+                            Elle permet de produire de l'électricité, dans les centrales nucléaires, appelées centrales électronucléaires, 
+                            grâce à la chaleur dégagée par la fission d'atomes d'uranium.
                         </div>
                     </div>
                 </div>
@@ -307,7 +326,7 @@
                         <div class="col-lg-4">
                             <i class="icon-o_hydro hydro-text-color fa-5x"></i>
                             <div class="clearfix"></div>
-                            a
+                            Plus grand débit : 4600 m³/s
                         </div>
                         <div class="col-lg-4">
                             <div class="hydro-color white-text-color">
@@ -319,10 +338,11 @@
                         <div class="col-lg-4">
                             <i class="icon-water-alt3 hydro-text-color fa-5x"></i>
                             <div class="clearfix"></div>
-                            a
+                            76% de l'énergie renouvelable produite dans le monde
                         </div>
-                        <div class="col-12 m-2">
-                            a
+                        <div class="col-12 my-2">
+                            L'hydroélectricité est l'une des principales énergies produites et consommées dans le monde.
+                            Parmi les énergies renouvelables, l'hydraulique occupe la 1ère place.
                         </div>
                     </div>
                 </div>
@@ -369,7 +389,7 @@
                         <div class="col-lg-4">
                             <i class="icon-o_gas gas-text-color fa-5x"></i>
                             <div class="clearfix"></div>
-                            a
+                            50% d'émissions en - par rapport au charbon
                         </div>
                         <div class="col-lg-4">
                             <div class="gas-color white-text-color">
@@ -381,10 +401,11 @@
                         <div class="col-lg-4">
                             <i class="icon-gas gas-text-color fa-5x"></i>
                             <div class="clearfix"></div>
-                            a
+                            70% du mix énergétique dans le monde
                         </div>
-                        <div class="col-12 m-2">
-                            a
+                        <div class="col-12 my-2">
+                            Flexibles et d’un impact réduit sur l'environnement, les centrales à cycles combinés au gaz naturel (CCG) 
+                            permettent d'améliorer le rendement énergétique tout en réduisant les émissions atmosphériques.
                         </div>
                     </div>
                 </div>
@@ -431,7 +452,7 @@
                         <div class="col-lg-4">
                             <i class="icon-o_eolien wind-text-color fa-5x"></i>
                             <div class="clearfix"></div>
-                            a
+                            2343 éoliennes
                         </div>
                         <div class="col-lg-4">
                             <div class="wind-color white-text-color">
@@ -443,10 +464,14 @@
                         <div class="col-lg-4">
                             <i class="icon-wind-alt2 wind-text-color fa-5x"></i>
                             <div class="clearfix"></div>
-                            a
+                            Hauteur moyenne : 160 mètres
                         </div>
-                        <div class="col-12 m-2">
-                            a
+                        <div class="col-12 col-my-2">
+                            Avec la loi relative à la transition énergétique pour la croissance verte, promulguée le 18 août 2015, 
+                            la France s’est fixée pour objectif d’atteindre 32% d’énergie renouvelable dans la consommation totale d’énergie de la France à horizon 2030.<br/>
+                            Les parcs éoliens terrestre sont construits sur des sites choisis en fonction de la qualité des vents tout en respectant un ensemble 
+                            de conditions dont : une distance minimale de 500 m des habitations, une distance minimale de 5 km des radars de l’aviation civile et météo 
+                            tout en respectant les paysages.
                         </div>
                     </div>
                 </div>
@@ -465,7 +490,7 @@
                         <i class="icon-o_bio"></i>
                     </div>
                     <div class="card-body">
-                        <h4 class="card-title">-- Centrales aux Bio-Energies</h4>
+                        <h4 class="card-title">Centrales aux Bio-Energies (Biomasse verte)</h4>
                         <hr>
                         <div class="row">
                             <div class="col-lg-6">
@@ -493,7 +518,7 @@
                         <div class="col-lg-4">
                             <i class="icon-o_bio bio-text-color fa-5x"></i>
                             <div class="clearfix"></div>
-                            a
+                            Premier prototype en mars 2017
                         </div>
                         <div class="col-lg-4">
                             <div class="bio-color white-text-color">
@@ -505,10 +530,10 @@
                         <div class="col-lg-4">
                             <i class="icon-green bio-text-color fa-5x"></i>
                             <div class="clearfix"></div>
-                            a
+                            La plupars du temps mixte en co-combustion (vert + gaz)
                         </div>
-                        <div class="col-12 m-2">
-                            a
+                        <div class="col-12 my-2">
+                            L'énergie issue de la biomasse est une source d'énergie renouvelable qui dépend du cycle de la matière vivante végétale et animale.
                         </div>
                     </div>
                 </div>
@@ -555,7 +580,7 @@
                         <div class="col-lg-4">
                             <i class="icon-o_solar solar-text-color fa-5x"></i>
                             <div class="clearfix"></div>
-                            a
+                            Installation = Panneau solaire + ondulateur + compteur
                         </div>
                         <div class="col-lg-4">
                             <div class="solar-color white-text-color">
@@ -567,10 +592,12 @@
                         <div class="col-lg-4">
                             <i class="icon-solar solar-text-color fa-5x"></i>
                             <div class="clearfix"></div>
-                            a
+                            1m² ≈ 150 Wc de puissance
                         </div>
-                        <div class="col-12 m-2">
-                            a
+                        <div class="col-12 my-2">
+                            L'énergie solaire est une source d'énergie qui dépend du soleil. 
+                            Cette énergie permet de fabriquer de l'électricité à partir de panneaux photovoltaïques ou des centrales solaires thermiques, 
+                            grâce à la lumière du soleil captée par des panneaux solaires.
                         </div>
                     </div>
                 </div>
@@ -617,7 +644,7 @@
                         <div class="col-lg-4">
                             <i class="icon-o_charbon coal-text-color fa-5x"></i>
                             <div class="clearfix"></div>
-                            a
+                            Meilleur rendement : 62%
                         </div>
                         <div class="col-lg-4">
                             <div class="coal-color white-text-color">
@@ -629,10 +656,14 @@
                         <div class="col-lg-4">
                             <i class="icon-coal coal-text-color fa-5x"></i>
                             <div class="clearfix"></div>
-                            a
+                            Centrale supercritique = min. 565°C + 250 bars
                         </div>
-                        <div class="col-12 m-2">
-                            a
+                        <div class="col-12 my-2">
+                            Dans les centrales au charbon à haut rendement, 
+                            l’eau est soumise à une température et une pression telles qu’elle passe directement d’un état fluide à gazeux : 
+                            les gains d’efficacité de cette opération permettent de réduire les besoins en combustible, et donc, 
+                            les rejets dans l’atmosphère de CO2 liés à la combustion du charbon. Plus la température et la pression augmentent, 
+                            plus le gain en termes d’efficacité est important, de même que la réduction de l’impact environnemental.
                         </div>
                     </div>
                 </div>
@@ -644,8 +675,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <h5 class="title">Footer Content</h5>
-                    <p>Here you can use rows and columns here to organize your footer content.</p>
+                    <h5 class="title">Sources</h5>
+                    <p>
+                        Images &amp; Descriptions : EDF<br/>
+                        Données : Eco2Mix par RTE
+                    </p>
                 </div>
                 <div class="col-lg-6">
                     <h5 class="title">Links</h5>
@@ -660,8 +694,7 @@
         </div>
         <div class="footer-copyright">
             <div class="container-fluid">
-                © 2018 <a href="https://www.MDBootstrap.com"> MDBootstrap.com </a>
-
+                © 2018 Bertrand Choubert
             </div>
         </div>
     </footer>
@@ -678,6 +711,7 @@
     <script type="text/javascript" src="data/data-gaz.js"></script>
     <script type="text/javascript" src="data/data-solar.js"></script>
     <script type="text/javascript" src="data/data-wind.js"></script>
+    <script type="text/javascript" src="data/data-bio.js"></script>
 
     <script type="text/javascript" src="js/charts.js"></script>
     <script type="text/javascript" src="js/maps.js"></script>
