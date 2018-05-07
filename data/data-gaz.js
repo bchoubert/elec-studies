@@ -1,5 +1,10 @@
 var dataGaz = [
     {
+        title: "Cordemais", coords: [47.24, -1.44],
+        html: "<ul><li>2 Chambres</li><li>Mise en service: 1983 à 1984</li></ul>",
+        img: "img/installations/coal/cordemais.jpg"
+    },
+    {
         title: "DK6", coords: [50.987, 2.818],
         html: "<ul><li>Puissance : 788 MWe</li><li>2 Chambres</li><li>Mise en service: 2005</li></ul>",
         img: "img/installations/gas/dk6.jpg"
