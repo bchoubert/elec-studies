@@ -115,6 +115,57 @@ var graphs = {
                 display: false
             }
         }
+    },
+    "chart-impexp": {
+        type: 'line',
+        data: {
+            labels: ["2012", "2013", "2014", "2015", "2016"],
+            datasets:[
+                {
+                    label: "Solde exportateur",
+                    data: [44, 47, 65, 61, 39],
+                    fill: false,
+                    borderColor: "rgb(45,45,45)",
+                    lineTension :0.1
+                },
+                {
+                    label: "Exports vers le Royaume-uni",
+                    data: [6, 10, 15, 14, 10],
+                    fill: false,
+                    borderColor: "rgb(166,127,21)",
+                    lineTension :0.1
+                },
+                {
+                    label: "Exports vers l'Espagne",
+                    data: [1, 1, 3, 7, 7],
+                    fill: false,
+                    borderColor: "rgb(131,86,162)",
+                    lineTension :0.1
+                },
+                {
+                    label: "Exports vers l'Italie",
+                    data: [15, 15, 19, 19, 16],
+                    fill: false,
+                    borderColor: "rgb(39,114,178)",
+                    lineTension :0.1
+                },
+                {
+                    label: "Exports vers la Suisse",
+                    data: [17, 16, 16, 13, 10],
+                    fill: false,
+                    borderColor: "rgb(39,178,147)",
+                    lineTension :0.1
+                },
+                {
+                    label: "Exports vers l'Allemagne et la Belgique",
+                    data: [3, 3, 10, 6, -5],
+                    fill: false,
+                    borderColor: "rgb(242,116,6)",
+                    lineTension :0.1
+                }
+            ]
+        },
+        options: {}
     }
 };
 

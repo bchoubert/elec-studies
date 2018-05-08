@@ -26,7 +26,9 @@ var networkLayers = {
 
 (function() {
 
-    networkMap = L.map("map-network").setView([47.5, 2.3], 5);
+    networkMap = L.map("map-network", {dragging: !L.Browser.mobile}).setView([47.5, 2.3], 5);
+
+    networkMap.scrollWheelZoom.disable();
 
     L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'

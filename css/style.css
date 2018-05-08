@@ -1,3 +1,8 @@
+@keyframes fancyLoad {
+    0% {width: 50%;}
+    100% {width: 100%;}
+}
+
 .fancy {
     display: flex;
     flex-direction: row;
@@ -8,16 +13,21 @@
     margin-bottom: -0.4em;
     position: relative;
     z-index: 9;
+    width: 100%;
+
+    animation: fancyLoad 2s;
 }
 
 .fancy:after {
     content: '';
     height: 8px;
     flex: 1;
-    border-top: 4px solid #00A6D9;
-    border-bottom: 4px solid #00A6D9;
+    border: 1px solid #00A6D9;
+    background-color: #00A6D9;
     border-radius: 4px;
     margin-left: 0.5em;
+
+    animation: fancyLoad 2s;
 }
 
 #introduction img.img-fluid {
@@ -200,6 +210,63 @@ path.leaflet-interactive:hover {
     height: 100%;
     width: 100%;
     display: block;
+}
+
+#countriesContainer img {
+    display: inline-block;
+    width: 20%;
+    height: auto;
+}
+
+.rejet-co2-list {
+    height: 503px;
+    display: block;
+    padding: 1.25rem 0.9rem;
+    
+}
+
+.rejet-co2-list span {
+    border-top: 1px solid #AAAAAA;
+    height: 137px;
+    text-align: center;
+    color: #FFFFFF;
+    display: block;
+    font-size: 200%;
+    padding-top: calc(68px - 0.65em);
+
+    transition: color,background-color 0.5s;
+}
+
+.rejet-co2-list span:last-child {
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+.rejet-co2-list span.pollution-gas {
+    color: #0091EA;
+}
+
+.rejet-co2-list span.pollution-gas:hover {
+    color: #FFFFFF;
+    background-color: #0091EA;
+}
+
+.rejet-co2-list span.pollution-bio {
+    color: #00C853;
+}
+
+.rejet-co2-list span.pollution-bio:hover {
+    color: #FFFFFF;
+    background-color: #00C853;
+}
+
+.rejet-co2-list span.pollution-charbon:hover {
+    color: #FFFFFF;
+    background-color: #FF6D00;
+}
+
+.rejet-co2-list span.pollution-charbon {
+    color: #FF6D00;
 }
 
 @media screen and (max-width: 991px) {
